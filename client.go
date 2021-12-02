@@ -142,7 +142,7 @@ func (c *FirmataClient) EnableDigitalInput(pin uint, val bool) (err error) {
 
 // Set the value of a digital pin
 func (c *FirmataClient) DigitalWrite(pin uint8, val bool) error {
-	fmt.Println("IUUUUUUUUUUUU")
+	fmt.Println("HAYYYYYYYYYYYYYYYYYY")
 	if pin < 0 || pin > uint8(len(c.pinModes)) && c.pinModes[pin][Output] != nil {
 		return fmt.Errorf("Invalid pin number %v\n", pin)
 	}
